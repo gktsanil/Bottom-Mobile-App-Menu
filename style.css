@@ -1,0 +1,36 @@
+.fixed-bar{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  display: table;
+  border: 1px solid #ddd;
+	box-shadow: 0 0 6px rgba(140, 132, 132, 0.27);
+}
+
+.middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.middle a i{
+  color: #274da2;
+}
+
+.fixed-bar i{
+  color: #34495e;
+}
+
+.divider{
+  background-color: #ddd;
+  width: 100%;
+  height: 1px;
+}
+
+.sample-content{
+  align-items: center;
+}
+
+#form_content{
+  margin-bottom:10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Controller</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div style="background-color:#274da2;" class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" style="color:white;" id="exampleModalLongTitle">Akıllı Phone İletişim</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="container">
+						<form class="" action="index.html" method="post">
+							<div class="row">
+								<div class="col-md-6">
+									<input id="form_content" class="form-control" type="text" name="name" placeholder="Adınız...">
+									<input id="form_content" class="form-control" type="text" name="subject" placeholder="Konu...">
+								</div>
+								<div class="col-md-6">
+									<input id="form_content" class="form-control" type="email" name="email" placeholder="Eposta...">
+									<div class="row">
+										<div class="col-md-4">
+											<input id="form_content" maxlength="3" style="width:130%;" class="form-control" type="phone" name="phone-code" placeholder="5XX">
+										</div>
+										<div class="col-md-8">
+											<input id="form_content" maxlength="7" class="form-control" type="phone" name="phone-number" placeholder="XXX XX XX">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<textarea class="form-control" name="message" rows="5" placeholder="Mesajınız..." cols="80"></textarea>
+								</div>
+							</div>
+						</form>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+	        <button type="button" id="send-message" data-dismiss="modal" class="btn btn-success">Gönder</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="fixed-bar">
+		<div class="middle">
+			<a class="up"><i class="fas fa-sort-up fa-3x fa-fw"></i></a>
+			<div class="divider"></div>
+			<a class="edit" data-toggle="modal" data-target="#contactModal"><i class="fas fa-pen-square fa-3x fa-fw"></i></a>
+			<div class="divider"></div>
+			<a href="tel:+905077032627" class="phone"><i class="fas fa-phone-square fa-3x fa-fw"></i></a>
+			<div class="divider"></div>
+			<a class="down"><i class="fas fa-sort-down fa-3x fa-fw"></i></a>
+		</div>
+	</div>
+
+
+
+	<div class="container sample-content">
+
+	</div>
+	<script src="controller.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
